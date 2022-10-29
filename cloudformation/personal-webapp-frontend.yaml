@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: This template creates the S3 bucket that will store the Angular application for my personal website
+Resources:
+  PersonalWebappFrontend:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: zrzuch-personal-webapp-frontend
+      Tags: 
+        - Key: Application Name
+          Value: personal-webapp
+      WebsiteConfiguration:
+        IndexDocument: index.html
+        ErrorDocument: index.html
