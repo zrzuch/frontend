@@ -1,0 +1,45 @@
+$toolbar-height: 64px;
+$content-height: calc(100% - $toolbar-height);
+.site-name {
+    font-size:xx-large;
+    margin-left: 15px;
+}
+button {
+    font-size: larger;
+}
+i {
+    font-size: xx-large;
+    float: right;
+    margin: 15px;
+}
+mat-toolbar {
+    position: sticky;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+mat-toolbar-row {
+    width: 100%;
+}
+.button-icons {
+    padding: 0;
+}
+.flex-expand {
+    flex: 1 1 auto;
+}
+mat-sidenav-container {
+    min-height: $content-height;
+}
+mat-sidenav-content {
+    font-size: large;
+}
+.remove-right-space {
+    padding-right: 0;
+    margin-right: 0;
+}
+.sidenav-below-toolbar {
+    height: $toolbar-height;
+}
+mat-nav-list {
+    padding-top: 0;
+}

@@ -1,0 +1,38 @@
+$border-radius: 10px;
+$padding: 10px;
+$margin-side: 10px;
+$content-width: min(1000px, 100% - (($margin-side * 2) + ($padding * 2)));
+.home-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.home-container-title, .home-container-body {
+    width: $content-width;
+    text-align: justify;
+    color: lightgrey;
+    padding: $padding;
+    margin-left: $margin-side;
+    margin-right: $margin-side;
+}
+.home-container-title {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    margin-bottom: 0;
+    border-style: solid !important;
+    border-color: lightgrey;
+    background-color: #212121;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px;
+}
+.home-container-body {
+    border-bottom-left-radius: $border-radius;
+    background-color: #414141;
+    border-bottom-right-radius: $border-radius;
+    margin-top: 0;
+}

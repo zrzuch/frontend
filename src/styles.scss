@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+$text-color: lightgrey;
+
+html, body { 
+    height: 100%; 
+    background-color: #303030;
+    color: $text-color;
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+.mat-btn-color, i, a {
+    color: $text-color;
+}
+i:hover {
+    color: lighten($color: $text-color, $amount: 100%);
+    cursor: pointer;
+}
